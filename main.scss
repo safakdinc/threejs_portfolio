@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: aliceblue;
+  background-color: var(--background);
+  --background: #030303;
+  --background-light: #101010;
+  --primary: #915eff;
+  --text-gray: rgb(184, 184, 184);
+}
+
+@font-face {
+  font-family: 'customFont';
+  src: url('./assets//inter.ttf') format('truetype');
+}
+
+.customFont {
+  font-family: 'customFont';
+  letter-spacing: 0px;
+}
+
+.full-screen-height {
+  min-height: calc(100vh - 80px);
+}
+.xl-text {
+  font-size: 35px;
+  line-height: 40px;
+  @media (min-width: 768px) {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+.lg-text {
+  font-size: 22px;
+  line-height: 28px;
+
+  @media (min-width: 1024px) {
+    font-size: 25px;
+    line-height: 31px;
+  }
+}
+
+.md-text {
+  font-size: 18px;
+  line-height: 24px;
+}
+.base-text {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #212121;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(190, 190, 190);
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: #888;
+  border-radius: 10px;
+}
