@@ -10,13 +10,9 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@splinetool/loader": "^1.0.98",
-    "@splinetool/runtime": "^1.0.94",
     "@vue/eslint-config-typescript": "^13.0.0",
     "autoprefixer": "^10.4.19",
-    "dat.gui": "^0.7.9",
     "eslint-plugin-vue": "^7.0.0-beta.4",
-    "glslify": "^7.1.1",
     "gsap": "^3.12.5",
     "nuxt": "^3.11.2",
     "postcss": "^8.4.38",
