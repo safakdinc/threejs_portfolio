@@ -33,11 +33,11 @@ const email = ref('');
 const message = ref('');
 const lottie = ref();
 const animationLink = ref('https://lottie.host/7770f6b6-d530-4d91-8f00-6036e8d2fa51/7nYgHTxckd.json');
-const sended = ref(false);
+const sent = ref(false);
 const checked = ref(false);
 
 async function sendMail() {
-  if (!sended.value && checkInputs()) {
+  if (!sent.value && checkInputs()) {
     const response = await useFetch('/api/send_mail', {
       params: {
         name: name.value,
@@ -46,7 +46,7 @@ async function sendMail() {
       }
     });
     if (response.data.value.data) {
-      sended.value = true;
+      sent.value = true;
       animationLink.value = 'https://lottie.host/7770f6b6-d530-4d91-8f00-6036e8d2fa51/7nYgHTxckd.json';
       lottie.value.play();
     } else {

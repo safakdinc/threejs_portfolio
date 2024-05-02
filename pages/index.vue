@@ -22,7 +22,9 @@ import gsap from 'gsap';
 import SplitType from 'split-type';
 
 const canvas = ref();
-const tl = gsap.timeline();
+const tl = gsap.timeline({
+  onComplete: () => {}
+});
 onMounted(() => {
   const loading_screen = document.querySelector('.loading-screen');
   const logo = document.querySelector('.logo');

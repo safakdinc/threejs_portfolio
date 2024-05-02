@@ -2,7 +2,7 @@
   <div class="w-full grid grid-cols-12" id="Techs">
     <div class="col-span-8 col-start-3 flex justify-center">
       <TitleReveal
-        ><div class="xl-text font-bold mb-32 mt-[88px] customFont whitespace-normal text-center">Technologies I Use</div></TitleReveal
+        ><div class="xl-text font-bold mb-32 mt-[88px] customFont sm:whitespace-nowrap text-center">Technologies I Use</div></TitleReveal
       >
     </div>
     <div class="col-span-12 col-start-0 md:col-span-10 md:col-start-2 w-full">
