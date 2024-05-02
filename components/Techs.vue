@@ -1,7 +1,9 @@
 <template>
   <div class="w-full grid grid-cols-12" id="Techs">
     <div class="col-span-9 col-start-3">
-      <TitleReveal><div class="xl-text font-bold mb-32 mt-[88px] customFont">Technologies I Use</div></TitleReveal>
+      <TitleReveal
+        ><div class="xl-text font-bold mb-32 mt-[88px] customFont whitespace-normal text-center">Technologies I Use</div></TitleReveal
+      >
     </div>
     <div class="col-span-12 col-start-0 md:col-span-10 md:col-start-2 w-full">
       <div class="w-full">

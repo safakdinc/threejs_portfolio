@@ -5,6 +5,7 @@
       contenteditable
       role="textbox"
       ref="element"
+      :class="{ error: props.checked && (text == '' || text == null) }"
       @input="input">
     </span>
   </div>
@@ -15,12 +16,18 @@ const props = defineProps({
   placeholder: {
     type: String,
     default: 'Type a comment'
+  },
+  checked: {
+    type: Boolean,
+    default: false
   }
 });
 
 const emits = defineEmits(['handleInput']);
+const text = ref();
 
 function input() {
+  text.value = event.target.textContent;
   emits('handleInput', event.target.textContent);
 }
 </script>
@@ -32,12 +39,17 @@ function input() {
   transition: box-shadow 0.4s ease;
   box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
+
 span:focus {
   box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+}
+.error:empty::before {
+  color: rgb(203, 40, 40);
 }
 
 span:empty::before {
   content: 'Type your message';
+  transition: all 0.2s ease-in;
   color: var(--text-gray);
   font-weight: 600;
   display: inline-block;

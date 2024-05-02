@@ -2,10 +2,10 @@
   <div class="w-full grid grid-cols-12 mt-[48px]">
     <div class="w-full col-span-12 sm:col-span-8 sm:col-start-3 flex justify-center py-[64px]">
       <TitleReveal>
-        <div class="customFont xl-text font-bold">Other Technolohies I Use</div>
+        <div class="customFont xl-text font-bold whitespace-normal text-center">Other Technologies I Use</div>
       </TitleReveal>
     </div>
-    <div class="flex justify-center flex-wrap col-start-0 sm:col-span-9 sm:col-start-2 md:col-span-6 md:col-start-4">
+    <div class="flex justify-center flex-wrap col-span-12 col-start-0 sm:col-span-9 sm:col-start-2 md:col-span-6 md:col-start-4">
       <div v-for="(item, index) in items" class="w-1/6" ref="content">
         <Ball :img="item.img" :info="item.info"></Ball>
       </div>

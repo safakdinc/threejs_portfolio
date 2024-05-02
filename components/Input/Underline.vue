@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper rounded-xl">
-    <input type="text" class="w-full" @input="onInput" placeholder="he" />
-    <span class="span customFont">{{ props.label }}</span>
+    <input type="text" class="w-full" v-model="text" @input="onInput" placeholder="he" />
+    <span class="span customFont" :class="{ error: props.checked && (text == '' || text == null) }">{{ props.label }}</span>
     <div class="underline"></div>
   </div>
 </template>
@@ -11,8 +11,14 @@ const props = defineProps({
   label: {
     type: String,
     default: 'Label'
+  },
+  checked: {
+    type: Boolean,
+    default: false
   }
 });
+
+const text = ref();
 
 const emits = defineEmits(['handleInput']);
 
@@ -51,6 +57,9 @@ input {
     transform: scaleX(1);
     transform-origin: left;
   }
+}
+.error {
+  color: rgb(255, 51, 51);
 }
 
 .span {

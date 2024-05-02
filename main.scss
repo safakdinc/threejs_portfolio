@@ -25,8 +25,9 @@ body {
   min-height: calc(100vh - 80px);
 }
 .xl-text {
-  font-size: 35px;
-  line-height: 40px;
+  font-size: 32px;
+  line-height: 37px;
+
   @media (min-width: 768px) {
     font-size: 40px;
     line-height: 45px;

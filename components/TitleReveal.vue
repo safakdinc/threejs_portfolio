@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-hidden whitespace-nowrap" ref="container">
+  <div class="overflow-hidden" ref="container">
     <slot></slot>
   </div>
 </template>
@@ -17,9 +17,12 @@ onMounted(() => {
       trigger: container.value,
       start: 'top bottom-=200px',
       end: 'bottom center'
+    },
+    onComplete: () => {
+      tl.kill();
     }
   });
-  tl.fromTo(container.value, { width: 0 }, { width: 'auto', duration: 1 });
+  tl.fromTo(container.value, { width: 0, whiteSpace: 'nowrap' }, { width: 'auto', whiteSpace: 'nowrap', duration: 1 });
 });
 </script>
 

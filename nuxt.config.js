@@ -15,6 +15,7 @@ export default defineNuxtConfig({
   experimental: {
     emitRouteChunkError: true
   },
+  plugins: ['@/plugins/lottie.js'],
   modules: ['v-wave/nuxt'],
   css: ['@/main.scss'],
   postcss: {
