@@ -52,6 +52,18 @@ onMounted(() => {
   tl.fromTo(hero_subtext, { opacity: 0 }, { opacity: 1, duration: 0.2, ease: 'none' }, '<0.4');
   const scroll_button = document.querySelector('.scroll-button');
   tl.fromTo(scroll_button, { opacity: 0, y: '100%' }, { opacity: 1, y: 0, duration: 0.4, ease: 'power3.out' }, '>0.2');
+  const icons = document.querySelectorAll('.icon');
+  icons.forEach(icon => {
+    tl.fromTo(
+      icon,
+      { scale: 0 },
+      {
+        scale: 1,
+        duration: 0.2,
+        ease: 'back.out(1.7)'
+      }
+    );
+  });
   tl.play();
 });
 </script>

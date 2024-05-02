@@ -1,6 +1,6 @@
 <template>
   <div class="w-full grid grid-cols-12" id="Techs">
-    <div class="col-span-9 col-start-3">
+    <div class="col-span-8 col-start-3 flex justify-center">
       <TitleReveal
         ><div class="xl-text font-bold mb-32 mt-[88px] customFont whitespace-normal text-center">Technologies I Use</div></TitleReveal
       >
