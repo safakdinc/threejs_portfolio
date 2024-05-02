@@ -19,29 +19,32 @@
     </div>
     <div class="w-fit justify-center relative">
       <div class="h-[110%] w-[5px] rounded-full bg-white absolute top-[-10%] left-[50%] translate-x-[-50%]" ref="verticalLine"></div>
-      <div class="w-[45px] h-[45px] p-1 rounded-full absolute absolute-center bg-[var(--background)] flex justify-center items-center">
-        <svg
-          class="w-full h-full overflow-visible absolute absolute-center rotate-[-90deg]"
-          viewBox="0 0 100 100"
-          xmlns="http://www.w3.org/2000/svg"
-          ref="svg">
-          <circle
-            ref="circle"
-            class="circle z-[-1]"
-            cx="50"
-            cy="50"
-            r="55"
-            stroke="#ffffff"
-            stroke-width="6"
-            fill-opacity="1"
-            fill="var(--background)" />
-        </svg>
-        <img
-          :src="props.tool.img"
-          class="w-full h-full z-10 object-center object-contain flex justify-center items-center p-[3px]"
-          :class="props.img_class"
-          ref="img" />
-      </div>
+      <a :href="props.tool.link" target="_blank">
+        <div
+          class="w-[45px] h-[45px] p-1 rounded-full absolute absolute-center bg-[var(--background)] flex justify-center items-center transition-transform duration-[400ms] hover:scale-[1.1] cursor-pointer">
+          <svg
+            class="w-full h-full overflow-visible absolute absolute-center rotate-[-90deg]"
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+            ref="svg">
+            <circle
+              ref="circle"
+              class="circle z-[-1]"
+              cx="50"
+              cy="50"
+              r="55"
+              stroke="#ffffff"
+              stroke-width="6"
+              fill-opacity="1"
+              fill="var(--background)" />
+          </svg>
+          <img
+            :src="props.tool.img"
+            class="w-full h-full z-10 object-center object-contain flex justify-center items-center p-[3px]"
+            :class="props.img_class"
+            ref="img" />
+        </div>
+      </a>
     </div>
     <div class="w-0 md:flex-1"></div>
   </div>

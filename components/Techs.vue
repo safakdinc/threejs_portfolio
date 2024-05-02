@@ -23,6 +23,7 @@ const info_nuxt = {
   name: 'Nuxt 3',
   title: 'A Powerfull Front-End Framework',
   img: '/nuxt.png',
+  link: 'https://nuxt.com',
   articles: [
     'Nuxt 3: Seamlessly integrates with TypeScript for enhanced type safety and developer productivity.',
     'Fast, scalable framework for exceptional web apps, supported by a vibrant community.',
@@ -33,6 +34,7 @@ const info_gsap = {
   name: 'GSAP',
   title: 'Easy To Use Animation Library',
   img: '/gsap.png',
+  link: 'https://gsap.com',
   articles: [
     ' Enables smooth animations with advanced features like timelines and easings.',
     'Enhances user experience with seamless transitions and interactive elements.',
@@ -46,6 +48,7 @@ const info_threejs = {
   name: 'Three.js',
   title: 'Powerful 3D Graphics Library',
   img: '/threejs.png',
+  link: 'https://threejs.org',
   articles: [
     'Enables creation of immersive 3D experiences with ease and efficiency.',
     'Provides a wide range of tools and utilities for building complex 3D scenes.',
@@ -59,6 +62,7 @@ const info_tailwindcss = {
   name: 'Tailwind CSS',
   title: 'Utility-First CSS Framework',
   img: '/tailwind.png',
+  link: 'https://tailwindcss.com',
   articles: [
     'Streamlines styling process with utility classes for rapid development.',
     'Offers a comprehensive set of pre-designed components for building modern interfaces.',
