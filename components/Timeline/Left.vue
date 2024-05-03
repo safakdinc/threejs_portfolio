@@ -18,10 +18,12 @@
       </div>
     </div>
     <div class="w-fit justify-center relative">
-      <div class="h-[110%] w-[5px] rounded-full bg-white absolute top-[-10%] left-[50%] translate-x-[-50%]" ref="verticalLine"></div>
+      <div
+        class="h-[110%] w-[3px] md:w-[5px] rounded-full bg-white absolute top-[-10%] left-[50%] translate-x-[-50%]"
+        ref="verticalLine"></div>
       <a :href="props.tool.link" target="_blank">
         <div
-          class="w-[45px] h-[45px] p-1 rounded-full absolute absolute-center bg-[var(--background)] flex justify-center items-center transition-transform duration-[400ms] hover:scale-[1.1] cursor-pointer">
+          class="w-[35px] md:w-[45] h-[35px] md:h-[45] p-1 rounded-full absolute absolute-center bg-[var(--background)] flex justify-center items-center transition-transform duration-[400ms] hover:scale-[1.1] cursor-pointer">
           <svg
             class="w-full h-full overflow-visible absolute absolute-center rotate-[-90deg]"
             viewBox="0 0 100 100"

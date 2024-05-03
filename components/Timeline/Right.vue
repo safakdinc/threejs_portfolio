@@ -7,7 +7,7 @@
       @mouseenter="mouseEnter"
       @mouseleave="mouseLeave">
       <div class="tooltip" ref="tooltip"></div>
-      <div class="w-full h-full rounded-[inherit] flex flex-col gap-2 px-7 py-5">
+      <div class="w-full h-full rounded-[inherit] flex gap-[4px] flex-col px-7 py-5">
         <div class="w-full lg-text text-white font-bold customFont">{{ tool.name }}</div>
         <div class="w-full base-text text-[var(--text-gray)] font-[700] customFont">{{ tool.title }}</div>
         <div class="w-full flex-1 font-[500] base-text px-5 mt-[8px] customFont">
@@ -17,11 +17,13 @@
         </div>
       </div>
     </div>
-    <div class="w-fit justify-center relative ml-[1px]">
-      <div class="h-[110%] w-[5px] rounded-full bg-white absolute top-[-10%] left-[50%] translate-x-[-50%]" ref="verticalLine"></div>
+    <div class="w-fit justify-center relative">
+      <div
+        class="h-[110%] w-[3px] md:w-[5px] rounded-full bg-white absolute top-[-10%] left-[50%] translate-x-[-50%]"
+        ref="verticalLine"></div>
       <a :href="props.tool.link" target="_blank">
         <div
-          class="w-[45px] h-[45px] p-1 rounded-full absolute absolute-center bg-[var(--background)] flex justify-center items-center transition-transform duration-[400ms] hover:scale-[1.1] cursor-pointer">
+          class="w-[35px] md:w-[45] h-[35px] md:h-[45] p-1 rounded-full absolute absolute-center bg-[var(--background)] flex justify-center items-center transition-transform duration-[400ms] hover:scale-[1.1] cursor-pointer">
           <svg
             class="w-full h-full overflow-visible absolute absolute-center rotate-[-90deg]"
             viewBox="0 0 100 100"

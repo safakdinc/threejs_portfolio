@@ -27,7 +27,7 @@
   }
 }
 .hero-text {
-  color: rgb(225, 225, 225);
+  color: rgb(200, 200, 200);
 }
 .bg-blur {
   background-color: #03030385;
