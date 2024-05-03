@@ -34,7 +34,7 @@ const items = [
     }
   },
   {
-    img: '/javascript.png',
+    img: 'https://i.ibb.co/C0bnW8N/javascript.png',
     info: {
       title: 'JavaScript',
       explanation: 'Main programming language for web development.'
@@ -48,14 +48,14 @@ const items = [
     }
   },
   {
-    img: '/nuxt.png',
+    img: 'https://i.ibb.co/x5TJFw8/nuxt.png',
     info: {
       title: 'Nuxt 3',
       explanation: 'Vue framework for building web applications'
     }
   },
   {
-    img: '/tailwind.png',
+    img: 'https://i.ibb.co/wNjN9gx/tailwind.png',
     info: {
       title: 'Tailwind',
       explanation: 'Utility-first CSS library.'

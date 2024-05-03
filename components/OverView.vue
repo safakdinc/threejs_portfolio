@@ -34,19 +34,19 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 const items = [
   {
-    img: '/web.png',
+    img: 'https://i.ibb.co/sV0cq27/web.png',
     title: 'Web Developer'
   },
   {
-    img: '/mobile.png',
+    img: 'https://i.ibb.co/rQyRJMt/mobile.png',
     title: 'Full Stack Developer'
   },
   {
-    img: '/backend.png',
+    img: 'https://i.ibb.co/cLnjVCC/backend.png',
     title: 'Nuxt Developer'
   },
   {
-    img: '/creator.png',
+    img: 'https://i.ibb.co/0yhv2yQ/creator.png',
     title: 'Web Designer'
   }
 ];

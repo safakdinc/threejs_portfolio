@@ -48,7 +48,7 @@ span:focus {
 }
 
 span:empty::before {
-  content: 'Type your message';
+  content: 'Write your message';
   transition: all 0.2s ease-in;
   color: var(--text-gray);
   font-weight: 600;

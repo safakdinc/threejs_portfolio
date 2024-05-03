@@ -4,10 +4,10 @@
       <Stars></Stars>
     </div>
     <div class="w-full md:h-full flex flex-col-reverse md:flex-row justify-center items-center md:mx-32 mb-20 md:mb-0 gap-5 z-10">
-      <BorderGradient class="w-full md:w-[35%] md:max-w-[35%] md:h-[80%] rounded-xl form overflow-hidden">
+      <div class="w-full md:w-[35%] md:max-w-[35%] md:h-[80%] rounded-xl form overflow-hidden border border-gray-600">
         <GetInTouch></GetInTouch>
-      </BorderGradient>
-      <div class="min-h-[60vh] h-1 w-full md:flex-1 overflow-hidden">
+      </div>
+      <div class="min-h-[60vh] h-1 w-full md:flex-1">
         <Earth></Earth>
       </div>
     </div>
