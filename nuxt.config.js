@@ -4,7 +4,14 @@ export default defineNuxtConfig({
   ssr: false,
   app: {
     head: {
-      title: 'Three.Js',
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/png',
+          href: 'https://i.ibb.co/D1P6XsJ/homer.png' // Path to your custom PNG icon
+        }
+      ],
+      title: 'Yazılım Panteri',
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       htmlAttrs: {
