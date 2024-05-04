@@ -15,13 +15,15 @@ const scene = new Three.Scene();
 const renderer = new Three.WebGLRenderer({ alpha: true });
 const camera = new Three.PerspectiveCamera(75, 1 / 1, 0.1, 1000);
 const pointLight = new Three.PointLight(0xffffff, 5.0, 0, 0);
+const pointLightHelper = new Three.PointLightHelper(pointLight, 1);
+/* scene.add(pointLightHelper); */
 pointLight.position.z = 10;
 scene.add(pointLight);
+
 const ambientLight = new Three.AmbientLight(0xffffff, 0.1);
 scene.add(ambientLight);
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = Three.PCFShadowMap;
-let isMobile = false; // Flag to check if it's a mobile device
 
 const initializeScene = () => {
   camera.aspect = canvas.value.offsetWidth / canvas.value.offsetHeight;
@@ -81,12 +83,8 @@ function animate() {
 }
 
 onMounted(() => {
-  // Check if it's a mobile device
-  isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-  if (!isMobile) {
-    initializeScene();
-    animate();
-  }
+  initializeScene();
+  animate();
 });
 
 const handleWindowResize = () => {
