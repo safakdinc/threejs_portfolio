@@ -70,7 +70,7 @@ function checkInputs() {
 
 <style lang="scss" scoped>
 .bg-blur {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(3px);
 }
 .shadow {

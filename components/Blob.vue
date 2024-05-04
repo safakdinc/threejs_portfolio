@@ -98,7 +98,8 @@ const handleWindowResize = () => {
 /* Add any necessary styles here */
 .bg-blur {
   pointer-events: none;
-  @media (max-width: 768px) {
+  transition: all 0.4s ease;
+  @media (max-width: 1024px) {
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
   }
