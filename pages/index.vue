@@ -1,6 +1,6 @@
 <template>
   <div ref="canvas" class="w-full overflow-x-hidden grid-rows-subgrid grid grid-cols-12 gap-2 px-[32px]">
-    <div class="col-span-12 col-start-0 md:col-span-10 md:col-start-3">
+    <div class="col-span-12 col-start-0 lg:col-span-10 lg:col-start-3">
       <Hero></Hero>
     </div>
     <div class="col-span-12 col-start-0 lg:col-span-8 lg:col-start-3">

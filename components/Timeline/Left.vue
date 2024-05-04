@@ -1,8 +1,8 @@
 <template>
-  <div class="w-full h-fit flex flex-row-reverse md:flex-row gap-12">
+  <div class="w-full h-fit flex flex-row-reverse lg:flex-row gap-12">
     <!--Timeline content-->
     <div
-      class="h-fit flex-1 bg-[var(--background-light)] col-span-5 md:col-span-3 md:col-start-3 rounded-lg relative mb-[64px]"
+      class="h-fit flex-1 bg-[var(--background-light)] col-span-5 lg:col-span-3 lg:col-start-3 rounded-lg relative mb-[64px]"
       @mouseenter="mouseEnter"
       @mouseleave="mouseLeave"
       ref="content">
@@ -19,11 +19,11 @@
     </div>
     <div class="w-fit justify-center relative">
       <div
-        class="h-[110%] w-[3px] md:w-[5px] rounded-full bg-white absolute top-[-10%] left-[50%] translate-x-[-50%]"
+        class="h-[110%] w-[3px] lg:w-[5px] rounded-full bg-white absolute top-[-10%] left-[50%] translate-x-[-50%]"
         ref="verticalLine"></div>
       <a :href="props.tool.link" target="_blank">
         <div
-          class="w-[35px] md:w-[45px] h-[35px] md:h-[45px] p-1 rounded-full absolute absolute-center bg-[var(--background)] flex justify-center items-center transition-transform duration-[400ms] hover:scale-[1.1] cursor-pointer">
+          class="w-[35px] lg:w-[45px] h-[35px] lg:h-[45px] p-1 rounded-full absolute absolute-center bg-[var(--background)] flex justify-center items-center transition-transform duration-[400ms] hover:scale-[1.1] cursor-pointer">
           <svg
             class="w-full h-full overflow-visible absolute absolute-center rotate-[-90deg]"
             viewBox="0 0 100 100"
@@ -48,7 +48,7 @@
         </div>
       </a>
     </div>
-    <div class="w-0 md:flex-1"></div>
+    <div class="w-0 lg:flex-1"></div>
   </div>
 </template>
 
@@ -78,8 +78,8 @@ const verticalLine = ref();
 onMounted(() => {
   // Define the animation
   ScrollTrigger.matchMedia({
-    '(min-width: 768px)': largeWindow,
-    '(max-width: 767px)': smallWindow
+    '(min-width: 1024px)': largeWindow,
+    '(max-width: 1023px)': smallWindow
   });
 });
 
@@ -141,7 +141,7 @@ function mouseLeave() {
   border-color: transparent var(--background-light) transparent transparent;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .tooltip {
     border-color: transparent transparent transparent var(--background-light);
     right: 0;
