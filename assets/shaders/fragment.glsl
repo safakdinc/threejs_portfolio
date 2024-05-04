@@ -12,7 +12,7 @@ void main() {
   float distort = vDistortion * 3.;
 
   vec3 brightness = vec3(.1, 0.0, .5);
-  vec3 contrast = vec3(.4, .3, .3);
+  vec3 contrast = vec3(.2, .2, .3);
   vec3 oscilation = vec3(.5, 0.0, .9);
   vec3 phase = vec3(.9, 0.0, .8);
  

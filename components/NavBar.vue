@@ -3,8 +3,8 @@
     <div class="w-full h-full grid grid-cols-12 relative">
       <div class="absolute top-0 left-0 w-full h-full navbar z-[999]" ref="navbar"></div>
       <div class="col-start-0 lg:col-start-3 px-5 lg:px-3 col-span-12 lg:col-span-8 flex justify-between py-2 items-center z-[1000]">
-        <div class="flex h-full items-center gap-2 logo">
-          <img src="https://i.ibb.co/D1P6XsJ/homer.png" class="rounded-full object-cover object-center h-10" />
+        <div class="flex h-full items-center logo">
+          <img src="https://i.ibb.co/kGLFNbn/IMG-1683.png" class="rounded-full object-cover object-center h-[60px]" />
           <div class="lg:text-2xl md-text font-bold hidden sm:block">Yazılım Panteri</div>
         </div>
         <div class="flex">
