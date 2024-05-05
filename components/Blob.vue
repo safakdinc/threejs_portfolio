@@ -83,9 +83,27 @@ function animate() {
 }
 
 onMounted(() => {
-  initializeScene();
-  animate();
+  if (isWebGLShaderSupported()) {
+    initializeScene();
+    animate();
+  }
 });
+const isWebGLShaderSupported = () => {
+  const canvas = document.createElement('canvas');
+  const context = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (context === null) {
+    return false;
+  }
+  const vertexShader = context.createShader(context.VERTEX_SHADER);
+  const fragmentShader = context.createShader(context.FRAGMENT_SHADER);
+  context.shaderSource(vertexShader, 'void main() {}');
+  context.shaderSource(fragmentShader, 'void main() {}');
+  context.compileShader(vertexShader);
+  context.compileShader(fragmentShader);
+  return (
+    context.getShaderParameter(vertexShader, context.COMPILE_STATUS) && context.getShaderParameter(fragmentShader, context.COMPILE_STATUS)
+  );
+};
 
 const handleWindowResize = () => {
   camera.aspect = canvas.value.offsetWidth / canvas.value.offsetHeight;
