@@ -9,27 +9,31 @@ export default defineEventHandler(async event => {
   let success = true;
   let transporter = nodemailer.createTransport({
     service: 'gmail',
+    port: 465,
     auth: {
       user: target_mail,
       pass: target_password
     }
   });
-  transporter.sendMail(
-    {
-      from: `${query.name} <${target_mail}>`,
-      to: target_mail,
-      subject: 'From Portfolio',
-      text: `Name: ${query.name}\nEmail: ${query.email}\nMessage: ${query.message}`
-    },
-    function (error, info) {
-      if (error) {
+  const mailData = {
+    from: `${query.name} <${target_mail}>`,
+    to: target_mail,
+    subject: 'From Portfolio',
+    text: `Name: ${query.name}\nEmail: ${query.email}\nMessage: ${query.message}`
+  };
+  await new Promise((resolve, reject) => {
+    // send mail
+    transporter.sendMail(mailData, (err, info) => {
+      if (err) {
+        console.error(err);
         success = false;
-        console.log(error);
+        reject(err);
       } else {
         success = true;
+        resolve(info);
       }
-    }
-  );
+    });
+  });
 
   return {
     data: success
