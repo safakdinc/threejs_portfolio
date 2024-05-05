@@ -8,7 +8,7 @@ export default defineNuxtConfig({
         {
           rel: 'icon',
           type: 'image/png',
-          href: 'https://i.ibb.co/D1P6XsJ/homer.png' // Path to your custom PNG icon
+          href: 'https://i.ibb.co/jRrmZQt/panter.png' // Path to your custom PNG icon
         }
       ],
       title: 'Yazılım Panteri',
