@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full full-screen-height h-1 flex">
+  <div class="w-full full-screen-height h-1 flex" id="Hero">
     <div class="w-[100%] lg:w-[45%] h-full flex flex-col justify-center gap-[16px] pb-[80px]">
       <div class="font-[700] xl-text hero-text customFont">Hey! I'm <span class="text-[var(--primary)]">Şafak</span></div>
       <div class="lg-text w-full xl:w-[70%] font-[500] hero-subtitle text-[var(--text-gray)]">
