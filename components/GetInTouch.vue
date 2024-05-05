@@ -41,6 +41,7 @@ const checked = ref(false);
 async function sendMail() {
   if (!sent.value && checkInputs()) {
     const response = await useFetch('/api/send_mail', {
+      method: 'POST',
       params: {
         name: name.value,
         email: email.value,
