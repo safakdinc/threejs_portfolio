@@ -10,7 +10,7 @@
       </div>
       <div class="w-7 h-7 icon">
         <div class="w-full h-full hover-effect">
-          <a href="https://github.com/kodsilici02" target="_blank" class="cursor-pointer">
+          <a href="https://github.com/safakdinc" target="_blank" class="cursor-pointer">
             <IconGithub></IconGithub>
           </a>
         </div>
