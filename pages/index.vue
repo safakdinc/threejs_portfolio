@@ -52,6 +52,8 @@ onMounted(() => {
   );
   const hero_subtext = document.querySelector('.hero-subtitle');
   tl.fromTo(hero_subtext, { opacity: 0 }, { opacity: 1, duration: 0.2, ease: 'none' }, '<0.4');
+  const cta_button = document.querySelector('.cta-button');
+  tl.fromTo(cta_button, { scale: 1.3, opacity: 0 }, { opacity: 1, scale: 1, duration: 0.2, ease: 'none' }, '<0.4');
   const scroll_button = document.querySelector('.scroll-button');
   tl.fromTo(scroll_button, { opacity: 0, y: '100%' }, { opacity: 1, y: 0, duration: 0.4, ease: 'power3.out' }, '>0.2');
   const icons = document.querySelectorAll('.icon');

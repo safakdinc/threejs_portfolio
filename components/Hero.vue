@@ -5,7 +5,7 @@
       <div class="lg-text w-full xl:w-[70%] font-[500] hero-subtitle text-[var(--text-gray)] text-center lg:text-left">
         I will design smooth animated and unique interfaces for you
       </div>
-      <a href="https://github.com/safakdinc" class="w-fit" target="_blank">
+      <a href="https://github.com/safakdinc" class="w-fit cta-button" target="_blank" id="cta">
         <CardContainer
           :multiplierX="30"
           :multiplierY="20"
