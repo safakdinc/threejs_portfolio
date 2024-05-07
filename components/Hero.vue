@@ -5,6 +5,16 @@
       <div class="lg-text w-full xl:w-[70%] font-[500] hero-subtitle text-[var(--text-gray)]">
         I will design smooth animated and unique interfaces for you
       </div>
+      <a href="https://github.com/safakdinc" class="w-fit" target="_blank">
+        <CardContainer
+          :multiplierX="30"
+          :multiplierY="20"
+          class="w-fit py-[12px] px-[24px] flex items-center gap-[8px] customFont rounded-full font-[600] bg-[var(--primary)] cursor-pointer mt-[24px]">
+          <CardItem v-wave :translateZ="50" :boxShadow="false" class="rounded-full flex justify-center gap-[8px] items-center">
+            CHECK MY GITHUB <i class="fa-brands fa-github text-2xl"></i>
+          </CardItem>
+        </CardContainer>
+      </a>
     </div>
     <div class="w-full h-full overflow-hidden py-10 absolute top-0 left-0 z-[-1] lg:z-10 lg:flex-1 lg:relative">
       <Blob></Blob>
