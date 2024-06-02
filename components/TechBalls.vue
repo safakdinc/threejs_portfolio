@@ -41,7 +41,7 @@ const items = [
     }
   },
   {
-    img: 'https://static-00.iconduck.com/assets.00/vue-icon-2048x1766-ntogpmti.png',
+    img: 'https://i.ibb.co/N1PQkS1/vue.png',
     info: {
       title: 'Vue 3',
       explanation: 'Progressive JavaScript framework.'
@@ -76,7 +76,7 @@ const items = [
     }
   },
   {
-    img: 'https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png',
+    img: 'https://i.ibb.co/CtmFyyC/node.png',
     info: {
       title: 'NodeJS',
       explanation: 'JavaScript runtime for server-side development.'
