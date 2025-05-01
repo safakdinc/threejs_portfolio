@@ -20,77 +20,77 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 const items = [
   {
-    img: 'https://res.cloudinary.com/dn5zxeevu/image/upload/v1722185699/1175208_fxxfrh.webp',
+    img: 'https://res.cloudinary.com/dj6ch4872/image/upload/v1746139485/html_jstrpl.png',
     info: {
       title: 'HTML5',
       explanation: 'HTML is a markup language used to structure web pages.'
     }
   },
   {
-    img: 'https://res.cloudinary.com/dn5zxeevu/image/upload/v1722185698/1175237_zuf3jv.webp',
+    img: 'https://res.cloudinary.com/dj6ch4872/image/upload/v1746139615/css_lnhi2r.png',
     info: {
       title: 'CSS',
       explanation: 'Styling language for web pages.'
     }
   },
   {
-    img: 'https://res.cloudinary.com/dn5zxeevu/image/upload/v1722185698/javascript_vdbbb4.png',
+    img: 'https://res.cloudinary.com/dj6ch4872/image/upload/v1746139694/js_ylqmic.png',
     info: {
       title: 'JavaScript',
       explanation: 'Main programming language for web development.'
     }
   },
   {
-    img: 'https://res.cloudinary.com/dn5zxeevu/image/upload/v1722185698/vue_q43jfo.png',
+    img: 'https://res.cloudinary.com/dj6ch4872/image/upload/v1746139728/vue_zybhct.png',
     info: {
       title: 'Vue 3',
       explanation: 'Progressive JavaScript framework.'
     }
   },
   {
-    img: 'https://res.cloudinary.com/dn5zxeevu/image/upload/v1722185698/nuxt_zgu84y.png',
+    img: 'https://res.cloudinary.com/dj6ch4872/image/upload/v1746139764/nuxt_xcdgln.svg',
     info: {
       title: 'Nuxt 3',
       explanation: 'Vue framework for building web applications'
     }
   },
   {
-    img: 'https://res.cloudinary.com/dn5zxeevu/image/upload/v1722185698/tailwind_jqesse.png',
+    img: 'https://res.cloudinary.com/dj6ch4872/image/upload/v1746139840/tailwind_uu8gek.png',
     info: {
       title: 'Tailwind',
       explanation: 'Utility-first CSS library.'
     }
   },
   {
-    img: 'https://res.cloudinary.com/dn5zxeevu/image/upload/v1722185697/threejs-fe160e71_grptri.svg',
+    img: 'https://res.cloudinary.com/dj6ch4872/image/upload/v1746139888/threejs_sumnaw.png',
     info: {
       title: 'ThreeJS',
       explanation: 'JavaScript library for 3D design.'
     }
   },
   {
-    img: 'https://res.cloudinary.com/dn5zxeevu/image/upload/v1722185697/pinia_frduvp.svg',
+    img: 'https://res.cloudinary.com/dj6ch4872/image/upload/v1746139927/pinia_nmpmy8.png',
     info: {
       title: 'Pinia',
       explanation: 'State management for Vue.'
     }
   },
   {
-    img: 'https://res.cloudinary.com/dn5zxeevu/image/upload/v1722185698/node_uo3lrq.png',
+    img: 'https://res.cloudinary.com/dj6ch4872/image/upload/v1746140010/nodejs_komihb.png',
     info: {
       title: 'NodeJS',
       explanation: 'JavaScript runtime for server-side development.'
     }
   },
   {
-    img: 'https://res.cloudinary.com/dn5zxeevu/image/upload/v1722185699/mongodb_original_logo_icon_146424_q3s7vg.webp',
+    img: 'https://res.cloudinary.com/dj6ch4872/image/upload/v1746140231/mongodb_ztjcat.png',
     info: {
       title: 'MongoDB',
       explanation: 'NoSQL database.'
     }
   },
   {
-    img: 'https://res.cloudinary.com/dn5zxeevu/image/upload/v1722185697/free-lottiefiles-logo-5622688-4674917_ypfaru.webp',
+    img: 'https://res.cloudinary.com/dj6ch4872/image/upload/v1746140346/lottie_fhjaga.png',
     info: {
       title: 'Lottie',
       explanation: 'Animation library and file format for web development.'
